@@ -1,0 +1,6 @@
+_id: '_id'
+title: 'city'
+loc: 'loc'
+pop: 'pop'
+state: 'state'
+city: '_none'

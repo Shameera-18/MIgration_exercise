@@ -1,0 +1,5 @@
+migration_city.add_form:
+  title: 'Add migration city'
+  route_name: entity.migration_city.add_form
+  appears_on:
+    - entity.migration_city.collection

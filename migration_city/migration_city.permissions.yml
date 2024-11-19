@@ -1,0 +1,11 @@
+administer migration_city:
+  title: 'Administer migration cities'
+  restrict access: true
+view migration_city:
+  title: 'View migration city'
+edit migration_city:
+  title: 'Edit migration city'
+delete migration_city:
+  title: 'Delete migration city'
+create migration_city:
+  title: 'Create migration city'

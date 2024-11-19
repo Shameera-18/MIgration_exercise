@@ -1,0 +1,11 @@
+entity.migration_city.collection:
+  title: 'Migration cities'
+  description: 'List of migration cities.'
+  route_name: entity.migration_city.collection
+  parent: system.admin_content
+migration_city.admin_form:
+  title: 'Migration Field Mapping'
+  description: 'Configure JSON field mappings for the migration.'
+  parent: system.admin_content
+  route_name: migration_city.migration_mapping_form
+  weight: 10

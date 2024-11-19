@@ -1,0 +1,7 @@
+migration_city.migration_mapping_form:
+  path: '/admin/config/migration-mapping'
+  defaults:
+    _form: '\Drupal\migration_city\Form\CityMigrationMappingForm'
+    _title: 'Entity Field to JSON Mapping'
+  requirements:
+    _permission: 'administer site configuration'

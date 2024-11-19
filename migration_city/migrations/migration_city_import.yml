@@ -1,0 +1,39 @@
+id: migration_city_import
+label: Migration of City Data
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls: 
+    - modules/custom/migration_city/files/cities.json
+  item_selector: migration
+  fields:
+    - name: '_id'
+      label: 'ID'
+      selector: '_id'
+    - name: 'city'
+      label: 'City'
+      selector: 'city'
+    - name: 'loc'
+      label: 'Location'
+      selector: 'loc'
+    - name: 'pop'
+      label: 'Population'
+      selector: 'pop'
+    - name: 'state'
+      label: 'State'
+      selector: 'state'
+  ids:
+    _id:
+      type: string
+process:
+  # Apply the json_dynamic_mapping plugin to all fields.
+  _all_fields:
+    plugin: json_dynamic_mapping
+  loc:
+    plugin: geofield_latlon
+    source:
+      - loc/0
+      - loc/1
+destination:
+  plugin: entity:migration_city

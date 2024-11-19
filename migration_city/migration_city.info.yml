@@ -1,0 +1,10 @@
+name: 'migration_city'
+type: module
+description: 'A module to migrate city data from JSON file'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:migrate
+  - drupal:migrate_plus
+  - drupal:geofield
+
